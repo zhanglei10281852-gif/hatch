@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "fieldCount": 18,
+  "questionType": "有效轮数 < 100 且 效果差",
+  "yamlParsed": true,
+  "scanEvidenceCheckedOnly": true,
+  "durationMatches": true,
+  "allResultAndReportRowsExact": true,
+  "collectionMatches": true,
+  "sources": {
+    "trajectory": "F:\\swe\\099928\\trajectories\\pypa-hatch-4d2944d3-33d3-4f4b-be6c-536ed3afd32a-33418fdc\\session-dc86bdf62a27e813.md",
+    "modelPatch": "F:\\swe\\099928\\project-02\\evidence\\model.patch",
+    "screenshotsDirectory": "F:\\swe\\099928\\project-02\\evidence\\screenshots",
+    "screenshots": [
+      {
+        "name": "01-rubric-comparison.png",
+        "parentPath": "F:\\swe\\099928\\project-02\\evidence\\screenshots",
+        "extension": ".png",
+        "validImage": true
+      }
+    ],
+    "screenshotCandidates": [
+      {
+        "name": "01-rubric-comparison.png",
+        "parentPath": "F:\\swe\\099928\\project-02\\evidence\\screenshots",
+        "extension": ".png",
+        "validImage": true
+      }
+    ],
+    "screenshotDirectoryIsCanonical": true,
+    "harness": "Trae"
+  }
+}

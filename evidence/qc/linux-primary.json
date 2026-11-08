@@ -1,0 +1,1243 @@
+{
+  "results": [
+    {
+      "name": "closure",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/closure",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/closure/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/closure/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/closure/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────── client-app ──────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n─────────────────────────────────────────────────────────────────────────── core-lib ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────── final-app ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/closure/dist/client_app-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/closure/dist/core_lib-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/closure/dist/final_app-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/closure/pkgs/client",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/closure/pkgs/core",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/closure/pkgs/final",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/client_app-1.0.0-py2.py3-none-any.whl": "4075c5b32a029966e989006f57d92bf4eb8d899f6d0ed8ef37b5f6b0d1bdf3c6",
+        "dist/final_app-1.0.0-py2.py3-none-any.whl": "8a69972bc3945fb0755841c24ca413289f355df4342e88086a36a5347935e02d",
+        "dist/core_lib-1.0.0-py2.py3-none-any.whl": "2a18dff494b8192c54f7858cffe5c4164278a2595f567e6ebfaa1ed901128e42"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/client_app-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/final_app-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/core_lib-1.0.0-py2.py3-none-any.whl": true,
+        "excludedAndUnrelatedAbsent": true
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/closure/data/env/virtual/final-app/OY1BPm-n/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/closure/data/env/virtual/client-app/I9HGY8HM/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/closure/data/env/virtual/core-lib/4JkUjVin/hatch-build/pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "mixed-states",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/mixed-states",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD~1",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/mixed-states/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/mixed-states/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/mixed-states/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD~1",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── b ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── c ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/mixed-states/dist/a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/mixed-states/dist/b-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/mixed-states/dist/c-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/mixed-states/a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/mixed-states/b",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/mixed-states/c",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/c-1.0.0-py2.py3-none-any.whl": "197d7ee0f56f325bec4f6c614ba9c9193c20764c916bb0214b0c2ea847d4f0d2",
+        "dist/b-1.0.0-py2.py3-none-any.whl": "36e1dc536395a8c9700b4338e87efe728cd3499533f048781461580843085192",
+        "dist/a-1.0.0-py2.py3-none-any.whl": "14997e0440732fd6ff9cc1b98345522b5e7e6d4b14c3806da360ab1423d9b620"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/c-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/b-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/a-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/mixed-states/data/env/virtual/b/oijUOtOk/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/mixed-states/data/env/virtual/a/sERKPZ-8/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/mixed-states/data/env/virtual/c/Ujl8BNvt/hatch-build/pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "deep-paths",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/deep-paths",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/deep-paths/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/deep-paths/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/deep-paths/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "──────────────────────────────────────────────────────────────────────────── nested ────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── spaced ────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/deep-paths/dist/nested-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/deep-paths/dist/spaced-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/deep-paths/pkgs/foo/nested",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/deep-paths/pkgs/has space",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/spaced-1.0.0-py2.py3-none-any.whl": "454e43e8e08a624b85bf68abb04b28caa981d7a8dd66c74c78fea1eb5085232c",
+        "dist/nested-1.0.0-py2.py3-none-any.whl": "f411598def2f82f80ce605f697577968e4cedb12933470f522c6e628e4361511"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/spaced-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/nested-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/deep-paths/data/env/virtual/nested/s1oongki/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/deep-paths/data/env/virtual/spaced/9bMZvLZc/hatch-build/pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "rename-delete",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/rename-delete",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/rename-delete/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/rename-delete/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/rename-delete/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── b ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── c ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/rename-delete/dist/a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/rename-delete/dist/b-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/rename-delete/dist/c-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/rename-delete/a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/rename-delete/b",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/rename-delete/c",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/c-1.0.0-py2.py3-none-any.whl": "56f07aab3180331a974c4528fdbef228db7afbafb150eb0cbc31eafcb51b9290",
+        "dist/b-1.0.0-py2.py3-none-any.whl": "50b4eacaf3d281a2f3b40279835c088f477c5bdb1365f80067f00ccf29dc0be8",
+        "dist/a-1.0.0-py2.py3-none-any.whl": "ea3186120a98fa2fec4248b0692e8207d0240e35b021ec3a00f9988675e81ad4"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/c-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/b-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/a-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/rename-delete/data/env/virtual/b/B7qhY152/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/rename-delete/data/env/virtual/a/PNxPip_I/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/rename-delete/data/env/virtual/c/yG-UorKj/hatch-build/pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "orphan",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/orphan",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/orphan/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/orphan/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/orphan/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── b ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/orphan/dist/a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/orphan/dist/b-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/orphan/pkgs/a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/orphan/pkgs/b",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/b-1.0.0-py2.py3-none-any.whl": "50b4eacaf3d281a2f3b40279835c088f477c5bdb1365f80067f00ccf29dc0be8",
+        "dist/a-1.0.0-py2.py3-none-any.whl": "ea3186120a98fa2fec4248b0692e8207d0240e35b021ec3a00f9988675e81ad4"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/b-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/a-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/orphan/data/env/virtual/b/-0QgIYQV/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/orphan/data/env/virtual/a/mZU-4JaN/hatch-build/pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "root-dedup",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/root-dedup",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/root-dedup/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/root-dedup/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/root-dedup/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "─────────────────────────────────────────────────────────────────────────── root-app ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\ndist/root_app-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/root-dedup",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/root_app-1.0.0-py2.py3-none-any.whl": "300f5598e8de90336b74dffcb3eae6c72f6b52fb0316daacf40faba097402adc"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/root_app-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/root-dedup/data/env/virtual/root-app/hMAboPiE/hatch-build/pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "unchanged",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/unchanged",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/unchanged/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/unchanged/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/unchanged/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 0,
+      "stdout": "",
+      "stderr": "No tracked file changes detected since `HEAD`, nothing to build\n",
+      "events": [],
+      "artifactsBefore": {
+        "dist/sentinel.whl": "726066b4a52739f46a6d9e0622d35178e577bd69cc52e1cc47fb0994ade8c017"
+      },
+      "artifactsAfter": {
+        "dist/sentinel.whl": "726066b4a52739f46a6d9e0622d35178e577bd69cc52e1cc47fb0994ade8c017"
+      },
+      "checks": {
+        "noChangesSuccess": true,
+        "noBackendOrEnvironment": true,
+        "artifactsUntouched": true
+      },
+      "environmentPaths": []
+    },
+    {
+      "name": "dynamic",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/dynamic",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/dynamic/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/dynamic/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/dynamic/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "─────────────────────────────────────────────────────────────────────────── core-lib ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n───────────────────────────────────────────────────────────────────────── dynamic-app ──────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/dynamic/dist/core_lib-1.0.0-py2.py3-none-any.whl\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/dynamic/dist/dynamic_app-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/dynamic/dynamic",
+          "phase": "metadata"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/dynamic/core",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/dynamic/dynamic",
+          "phase": "metadata"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/dynamic/dynamic",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/dynamic_app-1.0.0-py2.py3-none-any.whl": "062554f79c3f1cbd7817cbe5f585f67ffb68d62abc5ef2ca3cee1b7e6f0b239a",
+        "dist/core_lib-1.0.0-py2.py3-none-any.whl": "2a18dff494b8192c54f7858cffe5c4164278a2595f567e6ebfaa1ed901128e42"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/dynamic_app-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/core_lib-1.0.0-py2.py3-none-any.whl": true,
+        "actualDynamicMetadata": true
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/dynamic/data/env/virtual/core-lib/xrEtYIzx/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/dynamic/data/env/virtual/dynamic-app/B2JAVip8/hatch-build/pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "cycle",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/cycle",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/cycle/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/cycle/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/cycle/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── b ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/cycle/dist/a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/cycle/dist/b-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/cycle/a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/cycle/b",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/b-1.0.0-py2.py3-none-any.whl": "36ec518a63d6d7c5a99ca4c6897df7208e89a76e29041b2a6a75d1bfbc9996ba",
+        "dist/a-1.0.0-py2.py3-none-any.whl": "9b3d406a72829a67e91f109d496c714851b2405f3643d934bcc9ff6ee7afc4bb"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/b-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/a-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/cycle/data/env/virtual/b/T4JskIsA/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/cycle/data/env/virtual/a/veV_R7ye/hatch-build/pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "invalid-ref",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/invalid-ref",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "no-such-ref",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/invalid-ref/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/invalid-ref/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/invalid-ref/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "no-such-ref",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 1,
+      "stdout": "",
+      "stderr": "Invalid Git reference `no-such-ref` passed to `--changed-since`\n",
+      "events": [],
+      "artifactsBefore": {
+        "dist/sentinel.whl": "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3"
+      },
+      "artifactsAfter": {
+        "dist/sentinel.whl": "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3"
+      },
+      "checks": {
+        "locatedFailureBeforeSideEffects": true
+      },
+      "environmentPaths": []
+    },
+    {
+      "name": "requires-all",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/invalid-ref",
+      "args": [
+        "build",
+        "--changed-since",
+        "HEAD"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/requires-all/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/requires-all/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/requires-all/hatch-cache",
+        "build",
+        "--changed-since",
+        "HEAD"
+      ],
+      "code": 1,
+      "stdout": "",
+      "stderr": "The `--changed-since` option can only be used together with the `--all` flag\n",
+      "events": [],
+      "artifactsBefore": {
+        "dist/sentinel.whl": "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3"
+      },
+      "artifactsAfter": {
+        "dist/sentinel.whl": "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3"
+      },
+      "checks": {
+        "requiresAll": true
+      },
+      "environmentPaths": []
+    },
+    {
+      "name": "cross-tree",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/cross-tree",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/cross-tree/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/cross-tree/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/cross-tree/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 1,
+      "stdout": "",
+      "stderr": "The `--changed-since` option requires every workspace project to be located in the same Git working tree, found multiple working trees: /tmp/hatch-qc-4d2944d3-primary/fixtures-v3/cross-tree, /tmp/hatch-qc-4d2944d3-primary/fixtures-v3/cross-tree/b\n",
+      "events": [],
+      "artifactsBefore": {},
+      "artifactsAfter": {},
+      "checks": {
+        "crossTreeFailsBeforeBuild": true
+      },
+      "environmentPaths": []
+    },
+    {
+      "name": "duplicate-member-change",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-member-change",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-member-change/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-member-change/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-member-change/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 1,
+      "stdout": "",
+      "stderr": "The package names of `dupe-name` (`/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-member-change/a`) and `dupe-name` (`/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-member-change/b`) normalize to the same name `dupe-name`, so the affected projects cannot be determined unambiguously\n",
+      "events": [],
+      "artifactsBefore": {
+        "dist/dupe_name-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/dupe_name-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "checks": {
+        "duplicateRejectedBeforeBuild": true
+      },
+      "environmentPaths": []
+    },
+    {
+      "name": "metadata-member-change",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-member-change",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-member-change/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-member-change/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-member-change/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 1,
+      "stdout": "",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\nTraceback (most recent call last):\n  File \"/tmp/tmpgrbqg6o0/get_core_metadata.py\", line 29, in <module>\n    main()\n  File \"/tmp/tmpgrbqg6o0/get_core_metadata.py\", line 18, in main\n    core_metadata = resolve_metadata_fields(project_metadata)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-member-change/data/env/virtual/dynamic-app/PZzxM2dx/hatch-build/lib/python3.12/site-packages/hatchling/metadata/utils.py\", line 71, in resolve_metadata_fields\n    \"name\": metadata.core.name,\n            ^^^^^^^^^^^^^\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-member-change/data/env/virtual/dynamic-app/PZzxM2dx/hatch-build/lib/python3.12/site-packages/hatchling/metadata/core.py\", line 212, in core\n    metadata_hook.update(self.core_raw_metadata)\n  File \"/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-member-change/z-dynamic/hatch_build.py\", line 13, in update\n    if (Path(self.root)/'fail-metadata').exists():raise RuntimeError('CONTROLLED_METADATA_FAILURE '+str(self.root))\n                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CONTROLLED_METADATA_FAILURE /tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-member-change/z-dynamic\nUnable to resolve the dependency metadata of project `dynamic-app` at `/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-member-change/z-dynamic`: 1\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-member-change/z-dynamic",
+          "phase": "metadata"
+        }
+      ],
+      "artifactsBefore": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "checks": {
+        "metadataFailureBeforeBuild": true
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-member-change/data/env/virtual/dynamic-app/PZzxM2dx/hatch-build/pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "metadata-member-repaired",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-member-change",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-member-change/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-member-change/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-member-change/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Inspecting build dependencies\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-member-change/dist/a-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-member-change/z-dynamic",
+          "phase": "metadata"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-member-change/a",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "14997e0440732fd6ff9cc1b98345522b5e7e6d4b14c3806da360ab1423d9b620"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/a-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-member-change/data/env/virtual/a/V1xx1xKF/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-member-change/data/env/virtual/dynamic-app/PZzxM2dx/hatch-build/pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "duplicate-orphan-1",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-1",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-orphan-1/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-orphan-1/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-orphan-1/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────── dupe-name ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────── dupe-name ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-1/dist/dupe_name-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-1/dist/dupe_name-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-1/a",
+          "phase": "clean-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-1/a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-1/b",
+          "phase": "clean-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-1/b",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {
+        "dist/dupe_name-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/dupe_name-1.0.0-py2.py3-none-any.whl": "6112c448d8dd21e9aea501d91e358651a9f716ac1c3088e2b35b6c4ff6cae742"
+      },
+      "checks": {
+        "mustRejectDuplicateBeforeBuild": false
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-orphan-1/data/env/virtual/dupe-name/ifmi1T6r/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-orphan-1/data/env/virtual/dupe-name/ER5nBUwP/hatch-build/pyvenv.cfg"
+      ],
+      "observedDefect": "duplicate error bypassed"
+    },
+    {
+      "name": "metadata-orphan-1",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-1",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 1,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n───────────────────────────────────────────────────────────────────────── dynamic-app ──────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-1/dist/a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/data/env/virtual/dynamic-app/kWmE0L2O/hatch-build/lib/python3.12/site-packages/hatchling/__main__.py\", line 6, in <module>\n    sys.exit(hatchling())\n             ^^^^^^^^^^^\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/data/env/virtual/dynamic-app/kWmE0L2O/hatch-build/lib/python3.12/site-packages/hatchling/cli/__init__.py\", line 26, in hatchling\n    command(**kwargs)\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/data/env/virtual/dynamic-app/kWmE0L2O/hatch-build/lib/python3.12/site-packages/hatchling/cli/build/__init__.py\", line 82, in build_impl\n    for artifact in builder.build(\n                    ^^^^^^^^^^^^^^\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/data/env/virtual/dynamic-app/kWmE0L2O/hatch-build/lib/python3.12/site-packages/hatchling/builders/plugin/interface.py\", line 101, in build\n    self.metadata.validate_fields()\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/data/env/virtual/dynamic-app/kWmE0L2O/hatch-build/lib/python3.12/site-packages/hatchling/metadata/core.py\", line 282, in validate_fields\n    _ = self.version\n        ^^^^^^^^^^^^\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/data/env/virtual/dynamic-app/kWmE0L2O/hatch-build/lib/python3.12/site-packages/hatchling/metadata/core.py\", line 151, in version\n    self._version = self._get_version()\n                    ^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/data/env/virtual/dynamic-app/kWmE0L2O/hatch-build/lib/python3.12/site-packages/hatchling/metadata/core.py\", line 260, in _get_version\n    core_metadata = self.core\n                    ^^^^^^^^^\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/data/env/virtual/dynamic-app/kWmE0L2O/hatch-build/lib/python3.12/site-packages/hatchling/metadata/core.py\", line 212, in core\n    metadata_hook.update(self.core_raw_metadata)\n  File \"/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-1/z-dynamic/hatch_build.py\", line 13, in update\n    if (Path(self.root)/'fail-metadata').exists():raise RuntimeError('CONTROLLED_METADATA_FAILURE '+str(self.root))\n                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CONTROLLED_METADATA_FAILURE /tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-1/z-dynamic\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-1/a",
+          "phase": "clean-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-1/a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-1/z-dynamic",
+          "phase": "metadata"
+        }
+      ],
+      "artifactsBefore": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "ea3186120a98fa2fec4248b0692e8207d0240e35b021ec3a00f9988675e81ad4"
+      },
+      "checks": {
+        "mustPreflightAllMetadataBeforeBuild": false
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/data/env/virtual/a/iF6sm-dQ/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-1/data/env/virtual/dynamic-app/kWmE0L2O/hatch-build/pyvenv.cfg"
+      ],
+      "observedDefect": "a built and prior wheel overwritten before metadata failure"
+    },
+    {
+      "name": "duplicate-orphan-2",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-2",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-orphan-2/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-orphan-2/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-orphan-2/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────── dupe-name ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────── dupe-name ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-2/dist/dupe_name-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-2/dist/dupe_name-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-2/a",
+          "phase": "clean-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-2/a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-2/b",
+          "phase": "clean-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/duplicate-orphan-2/b",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {
+        "dist/dupe_name-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/dupe_name-1.0.0-py2.py3-none-any.whl": "6112c448d8dd21e9aea501d91e358651a9f716ac1c3088e2b35b6c4ff6cae742"
+      },
+      "checks": {
+        "mustRejectDuplicateBeforeBuild": false
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-orphan-2/data/env/virtual/dupe-name/XccT_plW/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/duplicate-orphan-2/data/env/virtual/dupe-name/E7_Viv2w/hatch-build/pyvenv.cfg"
+      ],
+      "observedDefect": "duplicate error bypassed"
+    },
+    {
+      "name": "metadata-orphan-2",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-2",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 1,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n───────────────────────────────────────────────────────────────────────── dynamic-app ──────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-2/dist/a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/data/env/virtual/dynamic-app/g0cpTI7-/hatch-build/lib/python3.12/site-packages/hatchling/__main__.py\", line 6, in <module>\n    sys.exit(hatchling())\n             ^^^^^^^^^^^\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/data/env/virtual/dynamic-app/g0cpTI7-/hatch-build/lib/python3.12/site-packages/hatchling/cli/__init__.py\", line 26, in hatchling\n    command(**kwargs)\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/data/env/virtual/dynamic-app/g0cpTI7-/hatch-build/lib/python3.12/site-packages/hatchling/cli/build/__init__.py\", line 82, in build_impl\n    for artifact in builder.build(\n                    ^^^^^^^^^^^^^^\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/data/env/virtual/dynamic-app/g0cpTI7-/hatch-build/lib/python3.12/site-packages/hatchling/builders/plugin/interface.py\", line 101, in build\n    self.metadata.validate_fields()\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/data/env/virtual/dynamic-app/g0cpTI7-/hatch-build/lib/python3.12/site-packages/hatchling/metadata/core.py\", line 282, in validate_fields\n    _ = self.version\n        ^^^^^^^^^^^^\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/data/env/virtual/dynamic-app/g0cpTI7-/hatch-build/lib/python3.12/site-packages/hatchling/metadata/core.py\", line 151, in version\n    self._version = self._get_version()\n                    ^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/data/env/virtual/dynamic-app/g0cpTI7-/hatch-build/lib/python3.12/site-packages/hatchling/metadata/core.py\", line 260, in _get_version\n    core_metadata = self.core\n                    ^^^^^^^^^\n  File \"/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/data/env/virtual/dynamic-app/g0cpTI7-/hatch-build/lib/python3.12/site-packages/hatchling/metadata/core.py\", line 212, in core\n    metadata_hook.update(self.core_raw_metadata)\n  File \"/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-2/z-dynamic/hatch_build.py\", line 13, in update\n    if (Path(self.root)/'fail-metadata').exists():raise RuntimeError('CONTROLLED_METADATA_FAILURE '+str(self.root))\n                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CONTROLLED_METADATA_FAILURE /tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-2/z-dynamic\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-2/a",
+          "phase": "clean-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-2/a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/metadata-orphan-2/z-dynamic",
+          "phase": "metadata"
+        }
+      ],
+      "artifactsBefore": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "ea3186120a98fa2fec4248b0692e8207d0240e35b021ec3a00f9988675e81ad4"
+      },
+      "checks": {
+        "mustPreflightAllMetadataBeforeBuild": false
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/data/env/virtual/a/x2LzaX_l/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/metadata-orphan-2/data/env/virtual/dynamic-app/g0cpTI7-/hatch-build/pyvenv.cfg"
+      ],
+      "observedDefect": "a built and prior wheel overwritten before metadata failure"
+    },
+    {
+      "name": "default-all",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-all",
+      "args": [
+        "build",
+        "output",
+        "--all"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/default-all/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/default-all/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/default-all/hatch-cache",
+        "build",
+        "output",
+        "--all"
+      ],
+      "code": 0,
+      "stdout": "─────────────────────────────────────────────────────────────────────────── root-app ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── sdist ─────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── a ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── sdist ─────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── b ───────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── sdist ─────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\noutput/root_app-1.0.0.tar.gz\noutput/root_app-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-all/output/a-1.0.0.tar.gz\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-all/output/a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-all/output/b-1.0.0.tar.gz\n/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-all/output/b-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-all",
+          "phase": "build-sdist"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-all",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-all/a",
+          "phase": "build-sdist"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-all/a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-all/b",
+          "phase": "build-sdist"
+        },
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-all/b",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "output/root_app-1.0.0.tar.gz": "93900ced500c31a7085097e1096401ad20f3f3b4ba770e3f69a7ad4f99ad3902",
+        "output/root_app-1.0.0-py2.py3-none-any.whl": "300f5598e8de90336b74dffcb3eae6c72f6b52fb0316daacf40faba097402adc",
+        "output/b-1.0.0-py2.py3-none-any.whl": "50b4eacaf3d281a2f3b40279835c088f477c5bdb1365f80067f00ccf29dc0be8",
+        "output/a-1.0.0.tar.gz": "2cd08604ea73e754b3e7e3d5829e5a34f830d23402fedb16cb10c53bc61e8868",
+        "output/b-1.0.0.tar.gz": "663b117d171d5a6ce19176414234ad26cf480dd37d61200018404b0883c03686",
+        "output/a-1.0.0-py2.py3-none-any.whl": "ea3186120a98fa2fec4248b0692e8207d0240e35b021ec3a00f9988675e81ad4"
+      },
+      "checks": {
+        "defaultAllOrder": true,
+        "defaultTargetsAndOutput": true
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/default-all/data/env/virtual/b/tTNUF3y_/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/default-all/data/env/virtual/a/_sfBrel2/hatch-build/pyvenv.cfg",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/default-all/data/env/virtual/root-app/L18QCbOv/hatch-build/pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "default-single",
+      "root": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-single",
+      "args": [
+        "build",
+        "output",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "/tmp/hatch-qc-4d2944d3-tools/bin/python",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/default-single/config.toml",
+        "--data-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/default-single/data",
+        "--cache-dir",
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/default-single/hatch-cache",
+        "build",
+        "output",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "──────────────────────────────────────────────────────────────────────────── wheel ─────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\noutput/root_app-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "/tmp/hatch-qc-4d2944d3-primary/fixtures-v3/default-single",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "output/root_app-1.0.0-py2.py3-none-any.whl": "300f5598e8de90336b74dffcb3eae6c72f6b52fb0316daacf40faba097402adc"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-output/root_app-1.0.0-py2.py3-none-any.whl": true,
+        "explicitOutput": true
+      },
+      "environmentPaths": [
+        "/tmp/hatch-qc-4d2944d3-primary/states-v3/default-single/data/env/virtual/root-app/_SJAz318/hatch-build/pyvenv.cfg"
+      ]
+    }
+  ],
+  "summary": {
+    "cases": 21,
+    "checks": 67,
+    "passed": 63,
+    "failed": [
+      [
+        "duplicate-orphan-1",
+        "mustRejectDuplicateBeforeBuild"
+      ],
+      [
+        "metadata-orphan-1",
+        "mustPreflightAllMetadataBeforeBuild"
+      ],
+      [
+        "duplicate-orphan-2",
+        "mustRejectDuplicateBeforeBuild"
+      ],
+      [
+        "metadata-orphan-2",
+        "mustPreflightAllMetadataBeforeBuild"
+      ]
+    ],
+    "driverErrors": []
+  },
+  "sourceRoot": "/mnt/f/swe/099928/project-02",
+  "networkDeniedProxy": [
+    {
+      "method": "CONNECT",
+      "url": "example.com:443"
+    }
+  ]
+}

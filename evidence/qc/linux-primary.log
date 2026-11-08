@@ -1,0 +1,49 @@
+closure exit 0 builds ['client', 'core', 'final']
+mixed-states exit 0 builds ['a', 'b', 'c']
+deep-paths exit 0 builds ['nested', 'has space']
+rename-delete exit 0 builds ['a', 'b', 'c']
+orphan exit 0 builds ['a', 'b']
+root-dedup exit 0 builds ['root-dedup']
+unchanged exit 0 builds []
+dynamic exit 0 builds ['core', 'dynamic']
+cycle exit 0 builds ['a', 'b']
+invalid-ref exit 1 builds []
+requires-all exit 1 builds []
+cross-tree exit 1 builds []
+duplicate-member-change exit 1 builds []
+metadata-member-change exit 1 builds []
+metadata-member-repaired exit 0 builds ['a']
+duplicate-orphan-1 exit 0 builds ['a', 'b']
+CHECK FAILED duplicate-orphan-1 mustRejectDuplicateBeforeBuild
+metadata-orphan-1 exit 1 builds ['a']
+CHECK FAILED metadata-orphan-1 mustPreflightAllMetadataBeforeBuild
+duplicate-orphan-2 exit 0 builds ['a', 'b']
+CHECK FAILED duplicate-orphan-2 mustRejectDuplicateBeforeBuild
+metadata-orphan-2 exit 1 builds ['a']
+CHECK FAILED metadata-orphan-2 mustPreflightAllMetadataBeforeBuild
+default-all exit 0 builds ['default-all', 'default-all', 'a', 'a', 'b', 'b']
+default-single exit 0 builds ['default-single']
+{
+  "cases": 21,
+  "checks": 67,
+  "passed": 63,
+  "failed": [
+    [
+      "duplicate-orphan-1",
+      "mustRejectDuplicateBeforeBuild"
+    ],
+    [
+      "metadata-orphan-1",
+      "mustPreflightAllMetadataBeforeBuild"
+    ],
+    [
+      "duplicate-orphan-2",
+      "mustRejectDuplicateBeforeBuild"
+    ],
+    [
+      "metadata-orphan-2",
+      "mustPreflightAllMetadataBeforeBuild"
+    ]
+  ],
+  "driverErrors": []
+}

@@ -4,6 +4,21 @@
 
 核心验证在 Windows / Python 3.11.7 下执行，使用全新工具 venv、每场景全新 Hatch data/cache、uv no-cache，以及独立 Git fixture。没有复用作者的 research-venv 或构建缓存。offline/ 的六个固定 wheel 是构建环境唯一依赖来源；其中 Hatchling 从登记基线的 backend 源码实际构建，其他为预下载的固定 wheel。offline-tools/ 提供本次 Windows 工具 venv 的完整 wheel 材料，包括 uv、pytest 和安装依赖。版本、文件大小和 SHA256 见 offline-manifest.json。
 
+交付质检另在 WSL 的原生 Alpine Linux 3.22.1 / Python 3.12.15 / uv 0.13.7 上重验全部 25 个核心场景及补充单测，未启动 Docker daemon、容器或额外数据库。质检补齐 Linux musl/Python 3.12 与 glibc 2.34+/Python 3.11 的工具 wheel，加入 Linux 使用的 distro、SecretStorage 和 jeepney。构建后端六个 pure wheel 跨平台共用。脚本按当前系统选择 uv 或 uv.exe；生产代码未修改。Linux 实际验证日志及离线网络探针在 evidence/qc/。
+
+Linux 复现（项目根部，Python 3.12/musl 或 Python 3.11/glibc 2.34+，普通用户权限）：
+
+```sh
+cp evidence/bootstrap/_version.py src/hatch/_version.py
+python3 -m venv /tmp/hatch-review-tools
+/tmp/hatch-review-tools/bin/python -m pip install --no-index --find-links evidence/offline-tools -r evidence/tooling-requirements.txt
+/tmp/hatch-review-tools/bin/python -m pip install --no-index --find-links evidence/offline --force-reinstall hatchling==1.33.0
+/tmp/hatch-review-tools/bin/python evidence/verify.py
+/tmp/hatch-review-tools/bin/python evidence/verify-extra.py
+```
+
+质检机器用系统已提供的 uv 0.13.7 创建不带 seed 的新 venv，并以 `uv pip install --offline --no-index --no-cache --find-links` 安装同一材料；完整命令在 qc/qc-report.md，安装原始输出在 qc/linux-tooling-install.txt。核心进程随后使用这个新 venv 内已由离线 wheel 安装的 uv。Linux 核心 21 场景 67 断言中 63 通过、4 个断言复现第6条缺陷；extra 4 场景 15 断言全通过。补充单测30通过、31未选取，不替代真实核心验证。glibc/Python 3.11 wheel 已准备并校验标签；实际核心执行平台是上述 musl/Python 3.12。
+
 创建一个空 Python 3.11 venv，然后运行（PowerShell，当前位置项目根部）：
 
 ```powershell

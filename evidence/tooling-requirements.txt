@@ -24,4 +24,4 @@ trove-classifiers==2026.9.21.13
 trustme==1.2.1
 userpath==1.9.2
 uv==0.13.7
-virtualenv==21.15.6
+virtualenv==21.15.6distro==1.9.0; sys_platform == "linux"

@@ -48,16 +48,40 @@
     "source": "pinned wheel downloaded before validation"
   },
   {
+    "path": "offline-tools/backports_zstd-1.8.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "size": 493818,
+    "sha256": "9c7fe40a58dbe1fd358e0ceb5b6b3f50a9b328f8fff42dcb3bdaeb9a022c2506",
+    "source": "prepared during QC for pinned Linux tool bootstrap; native platform and SHA256 recorded"
+  },
+  {
     "path": "offline-tools/backports_zstd-1.8.0-cp311-cp311-win_amd64.whl",
     "size": 330411,
     "sha256": "a11422c67c6295d36a7a30bac5df82e8a4fc82539d8def0d082ecf15cb24f538",
     "source": "pinned wheel downloaded before validation"
   },
   {
+    "path": "offline-tools/backports_zstd-1.8.0-cp312-cp312-musllinux_1_2_x86_64.whl",
+    "size": 501407,
+    "sha256": "ab77a2e6e21c57e8341bb7656c71d1a1653151ebe787b3f092ce86a02543eb52",
+    "source": "prepared during QC for pinned Linux tool bootstrap; native platform and SHA256 recorded"
+  },
+  {
+    "path": "offline-tools/cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "size": 217807,
+    "sha256": "34e261f78cb6ceaaa36f42f2613f4380d94d9c759a9c73c769ee6e0247364632",
+    "source": "prepared during QC for pinned Linux tool bootstrap; native platform and SHA256 recorded"
+  },
+  {
     "path": "offline-tools/cffi-2.1.1-cp311-cp311-win_amd64.whl",
     "size": 185096,
     "sha256": "42f6930c31dc7f50732c9ae793c2786c7b6b044195967bbdde40bb9be81c4cc0",
     "source": "pinned wheel downloaded before validation"
+  },
+  {
+    "path": "offline-tools/cffi-2.1.1-cp312-cp312-musllinux_1_2_x86_64.whl",
+    "size": 223597,
+    "sha256": "210019b6c7cf07f081b4c54635c8cf744377001350e29cc0f81c4377b4797735",
+    "source": "prepared during QC for pinned Linux tool bootstrap; native platform and SHA256 recorded"
   },
   {
     "path": "offline-tools/click-8.5.1-py3-none-any.whl",
@@ -72,6 +96,18 @@
     "source": "pinned wheel downloaded before validation"
   },
   {
+    "path": "offline-tools/cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl",
+    "size": 4752576,
+    "sha256": "9dab55f57c74c3cad24c323bacbbd04be4705ba6eb0d92e920b1fc4837ed5079",
+    "source": "prepared during QC for pinned Linux tool bootstrap; native platform and SHA256 recorded"
+  },
+  {
+    "path": "offline-tools/cryptography-50.0.2-cp311-abi3-musllinux_1_2_x86_64.whl",
+    "size": 5030152,
+    "sha256": "85d0d9a31b9098e98534226d5686b47264b95e62ce459dc2e62fdfc809f9fe93",
+    "source": "prepared during QC for pinned Linux tool bootstrap; native platform and SHA256 recorded"
+  },
+  {
     "path": "offline-tools/cryptography-50.0.2-cp311-abi3-win_amd64.whl",
     "size": 3824692,
     "sha256": "7afa5a6602a9f29af1f3a2965f831bae7c9d5d597b7cbb716d41ab3b7d89879c",
@@ -82,6 +118,12 @@
     "size": 472099,
     "sha256": "cf09d55b1e85a89576b036aeb71550bfd68320f3f21761ca329eadadad918638",
     "source": "pinned wheel downloaded before validation"
+  },
+  {
+    "path": "offline-tools/distro-1.9.0-py3-none-any.whl",
+    "size": 20277,
+    "sha256": "7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2",
+    "source": "prepared during QC for pinned Linux tool bootstrap; native platform and SHA256 recorded"
   },
   {
     "path": "offline-tools/editables-0.6-py3-none-any.whl",
@@ -166,6 +208,12 @@
     "size": 11677,
     "sha256": "99e3dc0060c5cbe8fcd1cdb36258e2a65ca40f1566b2033b12abb1bb44dd3c30",
     "source": "pinned wheel downloaded before validation"
+  },
+  {
+    "path": "offline-tools/jeepney-0.9.0-py3-none-any.whl",
+    "size": 49010,
+    "sha256": "97e5714520c16fc0a45695e5365a2e11b81ea79bba796e26f9f1d178cb182683",
+    "source": "prepared during QC for pinned Linux tool bootstrap; native platform and SHA256 recorded"
   },
   {
     "path": "offline-tools/keyring-25.7.0-py3-none-any.whl",
@@ -276,6 +324,12 @@
     "source": "pinned wheel downloaded before validation"
   },
   {
+    "path": "offline-tools/secretstorage-3.5.0-py3-none-any.whl",
+    "size": 15554,
+    "sha256": "0ce65888c0725fcb2c5bc0fdb8e5438eece02c523557ea40ce0703c266248137",
+    "source": "prepared during QC for pinned Linux tool bootstrap; native platform and SHA256 recorded"
+  },
+  {
     "path": "offline-tools/shellingham-1.5.4-py2.py3-none-any.whl",
     "size": 9755,
     "sha256": "7ecfff8f2fd72616f7481040475a65b2bf8af90a56c89140852d1120324e8686",
@@ -322,6 +376,18 @@
     "size": 9065,
     "sha256": "2cbf01a23d655a1ff8fc166dfb78da1b641d1ceabf0fe5f970767d380b14e89d",
     "source": "pinned wheel downloaded before validation"
+  },
+  {
+    "path": "offline-tools/uv-0.13.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "size": 17202345,
+    "sha256": "2c9bdc4a872b60a93c5f26c0791089ea11585a4f9d3b3c017d78eb8487505e25",
+    "source": "prepared during QC for pinned Linux tool bootstrap; native platform and SHA256 recorded"
+  },
+  {
+    "path": "offline-tools/uv-0.13.7-py3-none-musllinux_1_1_x86_64.whl",
+    "size": 18949870,
+    "sha256": "8b8ac028ae4ebb2a3f9d04907c61794f2cf8d7a7002bfbb4019a3dee28351fb2",
+    "source": "prepared during QC for pinned Linux tool bootstrap; native platform and SHA256 recorded"
   },
   {
     "path": "offline-tools/uv-0.13.7-py3-none-win_amd64.whl",

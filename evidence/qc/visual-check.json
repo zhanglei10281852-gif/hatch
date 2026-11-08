@@ -1,0 +1,9 @@
+{
+  "openedDuringQc": true,
+  "sha256": "47092c8b19a3e7c8b71438d4912f95a9f4fffb4b1d6b6611b9390f26c6b2433d",
+  "sameImageAsReviewer": true,
+  "singleCurrentProject": true,
+  "sevenRubricsAndFailureCauseImpactEvidenceReadable": true,
+  "noUnrelatedUiOrLargeEmptyArea": true,
+  "retainedImages": 1
+}

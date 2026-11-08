@@ -4,7 +4,7 @@ ROOT=pathlib.Path(__file__).resolve().parent.parent
 WORK=pathlib.Path(os.environ.get('HATCH_REVIEW_WORK',tempfile.mkdtemp(prefix='hatch-review-')))
 WORK.mkdir(parents=True,exist_ok=True)
 PY=pathlib.Path(sys.executable)
-UV=pathlib.Path(sys.executable).parent/'uv.exe'
+UV=pathlib.Path(sys.executable).parent/('uv.exe' if os.name == 'nt' else 'uv')
 FIX=WORK/'fixtures-v3'
 FIX.mkdir(exist_ok=True)
 GUARD=WORK/'network-guard';GUARD.mkdir(exist_ok=True)
