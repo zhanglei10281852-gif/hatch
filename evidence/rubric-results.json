@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "passed": true,
+    "reason": ""
+  },
+  {
+    "id": 2,
+    "passed": true,
+    "reason": ""
+  },
+  {
+    "id": 3,
+    "passed": true,
+    "reason": ""
+  },
+  {
+    "id": 4,
+    "passed": true,
+    "reason": ""
+  },
+  {
+    "id": 5,
+    "passed": true,
+    "reason": ""
+  },
+  {
+    "id": 6,
+    "passed": false,
+    "reason": "共享文件变化绕过名称歧义和元数据预检 同名包构建返回0 元数据失败前已清理并覆盖a制品"
+  },
+  {
+    "id": 7,
+    "passed": true,
+    "reason": ""
+  }
+]

@@ -85,6 +85,20 @@ The root project is built first and does not need to be listed as a member. If t
 hatch build --all out/artifacts
 ```
 
+### Building only what changed
+
+When maintaining a shared library in a monorepo, pass `--changed-since` with a Git reference such as a tag, branch, or commit to build only the projects affected by the changes since that reference, rather than every member:
+
+```
+hatch build --all --changed-since v1.0.0
+```
+
+The comparison covers committed changes since the reference as well as staged and unstaged modifications of tracked files. Untracked files are ignored, the merge base is not computed, and every project must be located in the same Git working tree. Each changed file is attributed to the deepest member directory that contains it, with file deletions attributed to the member that previously owned them and renames across members affecting both sides.
+
+Any project that directly or transitively depends on an affected project is built as well. The relationships use PEP 503 normalized package names derived from each project's runtime dependencies and all of its optional dependencies; version constraints, environment markers, and whether an optional group is enabled do not narrow the selection, and no package index is queried. If a tracked change cannot be attributed to any member, every candidate project is built conservatively.
+
+When there are no tracked file changes, the command succeeds without preparing build environments or modifying existing artifacts. The selected projects keep the regular `--all` build order, target selection, and unified output location.
+
 ## Test matrices with workspaces
 
 Combine workspace configuration with test matrices:

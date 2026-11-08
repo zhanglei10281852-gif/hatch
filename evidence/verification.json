@@ -1,0 +1,1243 @@
+{
+  "results": [
+    {
+      "name": "closure",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\closure\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\closure\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\closure\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "───────────────────────────────────────────────────────────────────────── client-app ──────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────── core-lib ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────── final-app ──────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\dist\\client_app-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\dist\\core_lib-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\dist\\final_app-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\pkgs\\client",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\pkgs\\core",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\closure\\pkgs\\final",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/client_app-1.0.0-py2.py3-none-any.whl": "7ad34720dc226ceea73aa3065bf0516f40330c35a5815280af99584b309e90cf",
+        "dist/core_lib-1.0.0-py2.py3-none-any.whl": "7c9adbc31e3302056578dd0a3013674fc5146c6b03d561089fd4a49be9d72b41",
+        "dist/final_app-1.0.0-py2.py3-none-any.whl": "ad039e495ee6cef5deadc6853e0caaf60c1fab53d2b9526b83f73c0e266d92e7"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/client_app-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/core_lib-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/final_app-1.0.0-py2.py3-none-any.whl": true,
+        "excludedAndUnrelatedAbsent": true
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\closure\\data\\env\\virtual\\client-app\\fRE3Bvdo\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\closure\\data\\env\\virtual\\core-lib\\ikAreay5\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\closure\\data\\env\\virtual\\final-app\\mR5nVjFb\\hatch-build\\pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "mixed-states",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD~1",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\mixed-states\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\mixed-states\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\mixed-states\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD~1",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── b ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── c ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\dist\\a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\dist\\b-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\dist\\c-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\b",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\mixed-states\\c",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "0b17002c07fc6346c3d9112c9514bd73dd8fdb35e78ac2eb2aee88d5eea2ca59",
+        "dist/b-1.0.0-py2.py3-none-any.whl": "4d22aa94f9a8bc58f9f048aa789b31f7e5bd25e2392fdf0eb0124ab24cdaa875",
+        "dist/c-1.0.0-py2.py3-none-any.whl": "58fa5bb37a3dde53d33a066fe339afc99eed47890b980c131bc525986fb7a9ed"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/a-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/b-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/c-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\mixed-states\\data\\env\\virtual\\a\\8WQBh7Pi\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\mixed-states\\data\\env\\virtual\\b\\rHJr2Xwq\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\mixed-states\\data\\env\\virtual\\c\\S4RUJ4lO\\hatch-build\\pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "deep-paths",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\deep-paths",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\deep-paths\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\deep-paths\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\deep-paths\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "─────────────────────────────────────────────────────────────────────────── nested ────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n─────────────────────────────────────────────────────────────────────────── spaced ────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\deep-paths\\dist\\nested-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\deep-paths\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\deep-paths\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\deep-paths\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\deep-paths\\dist\\spaced-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\deep-paths\\pkgs\\foo\\nested",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\deep-paths\\pkgs\\has space",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/nested-1.0.0-py2.py3-none-any.whl": "e0202d7b565799135a4c47b1dfeb461c6fa8885672460752fbceb4ecfb2ee855",
+        "dist/spaced-1.0.0-py2.py3-none-any.whl": "9fbcef3a7e7651502056684cdfade09dff8d0f91251114a13e637c06ee451e59"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/nested-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/spaced-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\deep-paths\\data\\env\\virtual\\nested\\kVIAEIDb\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\deep-paths\\data\\env\\virtual\\spaced\\jUE0MIoY\\hatch-build\\pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "rename-delete",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\rename-delete\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\rename-delete\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\rename-delete\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── b ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── c ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\dist\\a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\dist\\b-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\dist\\c-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\b",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\rename-delete\\c",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "153f4b14d8484240e6571c8912226dd156a5c707b42c3dc367d5176b839d2a8a",
+        "dist/b-1.0.0-py2.py3-none-any.whl": "08a87e7d1102d4432aec4a900ecc2e06c1bf28d83d013f93966f63bb509227b5",
+        "dist/c-1.0.0-py2.py3-none-any.whl": "fcf72962f8d3bce5af33e9c7cee97e32fa852ad527fdac89bfc53c1d20ad4d40"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/a-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/b-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/c-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\rename-delete\\data\\env\\virtual\\a\\3oMwj_yE\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\rename-delete\\data\\env\\virtual\\b\\kUDjqC9i\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\rename-delete\\data\\env\\virtual\\c\\kJhQ2kBM\\hatch-build\\pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "orphan",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\orphan",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\orphan\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\orphan\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\orphan\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── b ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\orphan\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\orphan\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\orphan\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\orphan\\dist\\a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\orphan\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\orphan\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\orphan\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\orphan\\dist\\b-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\orphan\\pkgs\\a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\orphan\\pkgs\\b",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "153f4b14d8484240e6571c8912226dd156a5c707b42c3dc367d5176b839d2a8a",
+        "dist/b-1.0.0-py2.py3-none-any.whl": "08a87e7d1102d4432aec4a900ecc2e06c1bf28d83d013f93966f63bb509227b5"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/a-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/b-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\orphan\\data\\env\\virtual\\a\\v5QUkCSr\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\orphan\\data\\env\\virtual\\b\\uVAOpNhK\\hatch-build\\pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "root-dedup",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\root-dedup",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\root-dedup\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\root-dedup\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\root-dedup\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────── root-app ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\ndist\\root_app-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\root-dedup",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/root_app-1.0.0-py2.py3-none-any.whl": "fb9b4174eaaf539387555e961657dce34bfdd0ef2de44ef4ec1041235764251e"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/root_app-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\root-dedup\\data\\env\\virtual\\root-app\\hIMxzoHt\\hatch-build\\pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "unchanged",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\unchanged",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\unchanged\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\unchanged\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\unchanged\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 0,
+      "stdout": "",
+      "stderr": "No tracked file changes detected since `HEAD`, nothing to build\n",
+      "events": [],
+      "artifactsBefore": {
+        "dist/sentinel.whl": "726066b4a52739f46a6d9e0622d35178e577bd69cc52e1cc47fb0994ade8c017"
+      },
+      "artifactsAfter": {
+        "dist/sentinel.whl": "726066b4a52739f46a6d9e0622d35178e577bd69cc52e1cc47fb0994ade8c017"
+      },
+      "checks": {
+        "noChangesSuccess": true,
+        "noBackendOrEnvironment": true,
+        "artifactsUntouched": true
+      },
+      "environmentPaths": []
+    },
+    {
+      "name": "dynamic",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\dynamic\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\dynamic\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\dynamic\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────── core-lib ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n───────────────────────────────────────────────────────────────────────── dynamic-app ─────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic\\pyproject.toml\nInspecting build dependencies\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic\\dist\\core_lib-1.0.0-py2.py3-none-any.whl\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic\\dist\\dynamic_app-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic\\dynamic",
+          "phase": "metadata"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic\\core",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic\\dynamic",
+          "phase": "metadata"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\dynamic\\dynamic",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/core_lib-1.0.0-py2.py3-none-any.whl": "7c9adbc31e3302056578dd0a3013674fc5146c6b03d561089fd4a49be9d72b41",
+        "dist/dynamic_app-1.0.0-py2.py3-none-any.whl": "4d8d0999621125249493e6f0214ab02026174ac84e4509b9ac078f114e5afd2b"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/core_lib-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/dynamic_app-1.0.0-py2.py3-none-any.whl": true,
+        "actualDynamicMetadata": true
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\dynamic\\data\\env\\virtual\\core-lib\\U7Uopjn9\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\dynamic\\data\\env\\virtual\\dynamic-app\\-ZPE7Gll\\hatch-build\\pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "cycle",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cycle",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\cycle\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\cycle\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\cycle\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── b ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cycle\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cycle\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cycle\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cycle\\dist\\a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cycle\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cycle\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cycle\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cycle\\dist\\b-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cycle\\a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cycle\\b",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "2aaefe36d06904d4962a501ca2ed7b1fc0f70a6bcc258d35a3bc21234abbebe2",
+        "dist/b-1.0.0-py2.py3-none-any.whl": "0c4166c23421629f47ee1a0a73c224923adb243cb5bf9830bfbd855c7dd80144"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/a-1.0.0-py2.py3-none-any.whl": true,
+        "validWheel-dist/b-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\cycle\\data\\env\\virtual\\a\\-BjiEVkJ\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\cycle\\data\\env\\virtual\\b\\vfiPPX5q\\hatch-build\\pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "invalid-ref",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\invalid-ref",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "no-such-ref",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\invalid-ref\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\invalid-ref\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\invalid-ref\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "no-such-ref",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 1,
+      "stdout": "",
+      "stderr": "Invalid Git reference `no-such-ref` passed to `--changed-since`\n",
+      "events": [],
+      "artifactsBefore": {
+        "dist/sentinel.whl": "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3"
+      },
+      "artifactsAfter": {
+        "dist/sentinel.whl": "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3"
+      },
+      "checks": {
+        "locatedFailureBeforeSideEffects": true
+      },
+      "environmentPaths": []
+    },
+    {
+      "name": "requires-all",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\invalid-ref",
+      "args": [
+        "build",
+        "--changed-since",
+        "HEAD"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\requires-all\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\requires-all\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\requires-all\\hatch-cache",
+        "build",
+        "--changed-since",
+        "HEAD"
+      ],
+      "code": 1,
+      "stdout": "",
+      "stderr": "The `--changed-since` option can only be used together with the `--all` flag\n",
+      "events": [],
+      "artifactsBefore": {
+        "dist/sentinel.whl": "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3"
+      },
+      "artifactsAfter": {
+        "dist/sentinel.whl": "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3"
+      },
+      "checks": {
+        "requiresAll": true
+      },
+      "environmentPaths": []
+    },
+    {
+      "name": "cross-tree",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cross-tree",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\cross-tree\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\cross-tree\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\cross-tree\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 1,
+      "stdout": "",
+      "stderr": "The `--changed-since` option requires every workspace project to be located in the same Git working tree, found multiple working trees: f:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cross-tree, f:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\cross-tree\\b\n",
+      "events": [],
+      "artifactsBefore": {},
+      "artifactsAfter": {},
+      "checks": {
+        "crossTreeFailsBeforeBuild": true
+      },
+      "environmentPaths": []
+    },
+    {
+      "name": "duplicate-member-change",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-member-change",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-member-change\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-member-change\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-member-change\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 1,
+      "stdout": "",
+      "stderr": "The package names of `dupe-name` (`F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-member-change\\a`) and `dupe-name` (`F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-member-change\\b`) normalize to the same name `dupe-name`, so the affected projects cannot be determined unambiguously\n",
+      "events": [],
+      "artifactsBefore": {
+        "dist/dupe_name-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/dupe_name-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "checks": {
+        "duplicateRejectedBeforeBuild": true
+      },
+      "environmentPaths": []
+    },
+    {
+      "name": "metadata-member-change",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-member-change\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-member-change\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-member-change\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 1,
+      "stdout": "",
+      "stderr": "Creating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\pyproject.toml\nInspecting build dependencies\nTraceback (most recent call last):\n  File \"C:\\Users\\czxy4\\AppData\\Local\\Temp\\tmpjun5de48\\get_core_metadata.py\", line 29, in <module>\n    main()\n  File \"C:\\Users\\czxy4\\AppData\\Local\\Temp\\tmpjun5de48\\get_core_metadata.py\", line 18, in main\n    core_metadata = resolve_metadata_fields(project_metadata)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-member-change\\data\\env\\virtual\\dynamic-app\\sVqtJLXF\\hatch-build\\Lib\\site-packages\\hatchling\\metadata\\utils.py\", line 71, in resolve_metadata_fields\n    \"name\": metadata.core.name,\n            ^^^^^^^^^^^^^\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-member-change\\data\\env\\virtual\\dynamic-app\\sVqtJLXF\\hatch-build\\Lib\\site-packages\\hatchling\\metadata\\core.py\", line 212, in core\n    metadata_hook.update(self.core_raw_metadata)\n  File \"F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\z-dynamic\\hatch_build.py\", line 13, in update\n    if (Path(self.root)/'fail-metadata').exists():raise RuntimeError('CONTROLLED_METADATA_FAILURE '+str(self.root))\n                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CONTROLLED_METADATA_FAILURE F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\z-dynamic\nUnable to resolve the dependency metadata of project `dynamic-app` at `F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\z-dynamic`: 1\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\z-dynamic",
+          "phase": "metadata"
+        }
+      ],
+      "artifactsBefore": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "checks": {
+        "metadataFailureBeforeBuild": true
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-member-change\\data\\env\\virtual\\dynamic-app\\sVqtJLXF\\hatch-build\\pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "metadata-member-repaired",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-member-change\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-member-change\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-member-change\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Inspecting build dependencies\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\dist\\a-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\z-dynamic",
+          "phase": "metadata"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-member-change\\a",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "0b17002c07fc6346c3d9112c9514bd73dd8fdb35e78ac2eb2aee88d5eea2ca59"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-dist/a-1.0.0-py2.py3-none-any.whl": true
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-member-change\\data\\env\\virtual\\a\\b81ApPjP\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-member-change\\data\\env\\virtual\\dynamic-app\\sVqtJLXF\\hatch-build\\pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "duplicate-orphan-1",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-orphan-1\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-orphan-1\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-orphan-1\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────── dupe-name ──────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────── dupe-name ──────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1\\dist\\dupe_name-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1\\dist\\dupe_name-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1\\a",
+          "phase": "clean-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1\\a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1\\b",
+          "phase": "clean-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-1\\b",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {
+        "dist/dupe_name-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/dupe_name-1.0.0-py2.py3-none-any.whl": "4f8b11b8d4a2da3a10822cd76018ee05280342842165620057ebb354c4a296cb"
+      },
+      "checks": {
+        "mustRejectDuplicateBeforeBuild": false
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-orphan-1\\data\\env\\virtual\\dupe-name\\UWqCk57B\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-orphan-1\\data\\env\\virtual\\dupe-name\\ZiqZE5LA\\hatch-build\\pyvenv.cfg"
+      ],
+      "observedDefect": "duplicate error bypassed"
+    },
+    {
+      "name": "metadata-orphan-1",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 1,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n───────────────────────────────────────────────────────────────────────── dynamic-app ─────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1\\dist\\a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1\\pyproject.toml\nInspecting build dependencies\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\data\\env\\virtual\\dynamic-app\\zFPkbzHH\\hatch-build\\Lib\\site-packages\\hatchling\\__main__.py\", line 6, in <module>\n    sys.exit(hatchling())\n             ^^^^^^^^^^^\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\data\\env\\virtual\\dynamic-app\\zFPkbzHH\\hatch-build\\Lib\\site-packages\\hatchling\\cli\\__init__.py\", line 26, in hatchling\n    command(**kwargs)\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\data\\env\\virtual\\dynamic-app\\zFPkbzHH\\hatch-build\\Lib\\site-packages\\hatchling\\cli\\build\\__init__.py\", line 82, in build_impl\n    for artifact in builder.build(\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\data\\env\\virtual\\dynamic-app\\zFPkbzHH\\hatch-build\\Lib\\site-packages\\hatchling\\builders\\plugin\\interface.py\", line 101, in build\n    self.metadata.validate_fields()\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\data\\env\\virtual\\dynamic-app\\zFPkbzHH\\hatch-build\\Lib\\site-packages\\hatchling\\metadata\\core.py\", line 282, in validate_fields\n    _ = self.version\n        ^^^^^^^^^^^^\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\data\\env\\virtual\\dynamic-app\\zFPkbzHH\\hatch-build\\Lib\\site-packages\\hatchling\\metadata\\core.py\", line 151, in version\n    self._version = self._get_version()\n                    ^^^^^^^^^^^^^^^^^^^\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\data\\env\\virtual\\dynamic-app\\zFPkbzHH\\hatch-build\\Lib\\site-packages\\hatchling\\metadata\\core.py\", line 260, in _get_version\n    core_metadata = self.core\n                    ^^^^^^^^^\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\data\\env\\virtual\\dynamic-app\\zFPkbzHH\\hatch-build\\Lib\\site-packages\\hatchling\\metadata\\core.py\", line 212, in core\n    metadata_hook.update(self.core_raw_metadata)\n  File \"F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1\\z-dynamic\\hatch_build.py\", line 13, in update\n    if (Path(self.root)/'fail-metadata').exists():raise RuntimeError('CONTROLLED_METADATA_FAILURE '+str(self.root))\n                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CONTROLLED_METADATA_FAILURE F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1\\z-dynamic\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1\\a",
+          "phase": "clean-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1\\a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-1\\z-dynamic",
+          "phase": "metadata"
+        }
+      ],
+      "artifactsBefore": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "153f4b14d8484240e6571c8912226dd156a5c707b42c3dc367d5176b839d2a8a"
+      },
+      "checks": {
+        "mustPreflightAllMetadataBeforeBuild": false
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\data\\env\\virtual\\a\\KMrUz-4-\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-1\\data\\env\\virtual\\dynamic-app\\zFPkbzHH\\hatch-build\\pyvenv.cfg"
+      ],
+      "observedDefect": "a built and prior wheel overwritten before metadata failure"
+    },
+    {
+      "name": "duplicate-orphan-2",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-orphan-2\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-orphan-2\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-orphan-2\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────── dupe-name ──────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────── dupe-name ──────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2\\dist\\dupe_name-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2\\dist\\dupe_name-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2\\a",
+          "phase": "clean-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2\\a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2\\b",
+          "phase": "clean-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\duplicate-orphan-2\\b",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {
+        "dist/dupe_name-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/dupe_name-1.0.0-py2.py3-none-any.whl": "4f8b11b8d4a2da3a10822cd76018ee05280342842165620057ebb354c4a296cb"
+      },
+      "checks": {
+        "mustRejectDuplicateBeforeBuild": false
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-orphan-2\\data\\env\\virtual\\dupe-name\\-UKGXwrN\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\duplicate-orphan-2\\data\\env\\virtual\\dupe-name\\AgaHsBqq\\hatch-build\\pyvenv.cfg"
+      ],
+      "observedDefect": "duplicate error bypassed"
+    },
+    {
+      "name": "metadata-orphan-2",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2",
+      "args": [
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\hatch-cache",
+        "build",
+        "--all",
+        "--changed-since",
+        "HEAD",
+        "-t",
+        "wheel",
+        "--clean"
+      ],
+      "code": 1,
+      "stdout": "────────────────────────────────────────────────────────────────────────────── a ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n───────────────────────────────────────────────────────────────────────── dynamic-app ─────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2\\pyproject.toml\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2\\dist\\a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2\\pyproject.toml\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2\\pyproject.toml\nChecking dependencies\nSyncing dependencies\nWARN `pyproject.toml` does not contain a `project` table: F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2\\pyproject.toml\nInspecting build dependencies\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\data\\env\\virtual\\dynamic-app\\rFWY8bEk\\hatch-build\\Lib\\site-packages\\hatchling\\__main__.py\", line 6, in <module>\n    sys.exit(hatchling())\n             ^^^^^^^^^^^\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\data\\env\\virtual\\dynamic-app\\rFWY8bEk\\hatch-build\\Lib\\site-packages\\hatchling\\cli\\__init__.py\", line 26, in hatchling\n    command(**kwargs)\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\data\\env\\virtual\\dynamic-app\\rFWY8bEk\\hatch-build\\Lib\\site-packages\\hatchling\\cli\\build\\__init__.py\", line 82, in build_impl\n    for artifact in builder.build(\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\data\\env\\virtual\\dynamic-app\\rFWY8bEk\\hatch-build\\Lib\\site-packages\\hatchling\\builders\\plugin\\interface.py\", line 101, in build\n    self.metadata.validate_fields()\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\data\\env\\virtual\\dynamic-app\\rFWY8bEk\\hatch-build\\Lib\\site-packages\\hatchling\\metadata\\core.py\", line 282, in validate_fields\n    _ = self.version\n        ^^^^^^^^^^^^\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\data\\env\\virtual\\dynamic-app\\rFWY8bEk\\hatch-build\\Lib\\site-packages\\hatchling\\metadata\\core.py\", line 151, in version\n    self._version = self._get_version()\n                    ^^^^^^^^^^^^^^^^^^^\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\data\\env\\virtual\\dynamic-app\\rFWY8bEk\\hatch-build\\Lib\\site-packages\\hatchling\\metadata\\core.py\", line 260, in _get_version\n    core_metadata = self.core\n                    ^^^^^^^^^\n  File \"F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\data\\env\\virtual\\dynamic-app\\rFWY8bEk\\hatch-build\\Lib\\site-packages\\hatchling\\metadata\\core.py\", line 212, in core\n    metadata_hook.update(self.core_raw_metadata)\n  File \"F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2\\z-dynamic\\hatch_build.py\", line 13, in update\n    if (Path(self.root)/'fail-metadata').exists():raise RuntimeError('CONTROLLED_METADATA_FAILURE '+str(self.root))\n                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CONTROLLED_METADATA_FAILURE F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2\\z-dynamic\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2\\a",
+          "phase": "clean-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2\\a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\metadata-orphan-2\\z-dynamic",
+          "phase": "metadata"
+        }
+      ],
+      "artifactsBefore": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "6a0214473ea95fc4e02fe7079c3e34eed01836faa2cc729394f8b1a5b6e65dc3"
+      },
+      "artifactsAfter": {
+        "dist/a-1.0.0-py2.py3-none-any.whl": "153f4b14d8484240e6571c8912226dd156a5c707b42c3dc367d5176b839d2a8a"
+      },
+      "checks": {
+        "mustPreflightAllMetadataBeforeBuild": false
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\data\\env\\virtual\\a\\4R0RMwjn\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\metadata-orphan-2\\data\\env\\virtual\\dynamic-app\\rFWY8bEk\\hatch-build\\pyvenv.cfg"
+      ],
+      "observedDefect": "a built and prior wheel overwritten before metadata failure"
+    },
+    {
+      "name": "default-all",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-all",
+      "args": [
+        "build",
+        "output",
+        "--all"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\default-all\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\default-all\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\default-all\\hatch-cache",
+        "build",
+        "output",
+        "--all"
+      ],
+      "code": 0,
+      "stdout": "────────────────────────────────────────────────────────────────────────── root-app ───────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── sdist ────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── a ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── sdist ────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n────────────────────────────────────────────────────────────────────────────── b ──────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── sdist ────────────────────────────────────────────────────────────────────────────\n──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\noutput\\root_app-1.0.0.tar.gz\noutput\\root_app-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-all\\output\\a-1.0.0.tar.gz\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-all\\output\\a-1.0.0-py2.py3-none-any.whl\nCreating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-all\\output\\b-1.0.0.tar.gz\nF:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-all\\output\\b-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-all",
+          "phase": "build-sdist"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-all",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-all\\a",
+          "phase": "build-sdist"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-all\\a",
+          "phase": "build-wheel"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-all\\b",
+          "phase": "build-sdist"
+        },
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-all\\b",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "output/a-1.0.0-py2.py3-none-any.whl": "153f4b14d8484240e6571c8912226dd156a5c707b42c3dc367d5176b839d2a8a",
+        "output/a-1.0.0.tar.gz": "05f9b3c44b31d78743dbf1b8661d9130d394abb8ab22f6a00b3132b3f57b4c70",
+        "output/b-1.0.0-py2.py3-none-any.whl": "08a87e7d1102d4432aec4a900ecc2e06c1bf28d83d013f93966f63bb509227b5",
+        "output/b-1.0.0.tar.gz": "73553219f4e30d1e66f87e302de79e1a14181eeb58915482efc0c4129a22836d",
+        "output/root_app-1.0.0-py2.py3-none-any.whl": "fb9b4174eaaf539387555e961657dce34bfdd0ef2de44ef4ec1041235764251e",
+        "output/root_app-1.0.0.tar.gz": "c9ddd212a281210971691a0c58eb07de5e5df487ada7925527368529c060702b"
+      },
+      "checks": {
+        "defaultAllOrder": true,
+        "defaultTargetsAndOutput": true
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\default-all\\data\\env\\virtual\\a\\YQrB0xoY\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\default-all\\data\\env\\virtual\\b\\78fxsHT4\\hatch-build\\pyvenv.cfg",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\default-all\\data\\env\\virtual\\root-app\\_Uqij4L1\\hatch-build\\pyvenv.cfg"
+      ]
+    },
+    {
+      "name": "default-single",
+      "root": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-single",
+      "args": [
+        "build",
+        "output",
+        "-t",
+        "wheel"
+      ],
+      "command": [
+        "F:\\swe\\work\\hatch-delivery-review\\venv\\Scripts\\python.exe",
+        "-m",
+        "hatch",
+        "--no-color",
+        "--config",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\default-single\\config.toml",
+        "--data-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\default-single\\data",
+        "--cache-dir",
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\default-single\\hatch-cache",
+        "build",
+        "output",
+        "-t",
+        "wheel"
+      ],
+      "code": 0,
+      "stdout": "──────────────────────────────────────────────────────────────────────────── wheel ────────────────────────────────────────────────────────────────────────────\n",
+      "stderr": "Creating environment: hatch-build\nChecking dependencies\nSyncing dependencies\nInspecting build dependencies\noutput\\root_app-1.0.0-py2.py3-none-any.whl\n",
+      "events": [
+        {
+          "project": "F:\\swe\\work\\hatch-delivery-review\\fixtures-v3\\default-single",
+          "phase": "build-wheel"
+        }
+      ],
+      "artifactsBefore": {},
+      "artifactsAfter": {
+        "output/root_app-1.0.0-py2.py3-none-any.whl": "fb9b4174eaaf539387555e961657dce34bfdd0ef2de44ef4ec1041235764251e"
+      },
+      "checks": {
+        "successfulActualBuild": true,
+        "selectedOrder": true,
+        "wheelCount": true,
+        "validWheel-output/root_app-1.0.0-py2.py3-none-any.whl": true,
+        "explicitOutput": true
+      },
+      "environmentPaths": [
+        "F:\\swe\\work\\hatch-delivery-review\\states-v3\\default-single\\data\\env\\virtual\\root-app\\CjrOz-3E\\hatch-build\\pyvenv.cfg"
+      ]
+    }
+  ],
+  "summary": {
+    "cases": 21,
+    "checks": 67,
+    "passed": 63,
+    "failed": [
+      [
+        "duplicate-orphan-1",
+        "mustRejectDuplicateBeforeBuild"
+      ],
+      [
+        "metadata-orphan-1",
+        "mustPreflightAllMetadataBeforeBuild"
+      ],
+      [
+        "duplicate-orphan-2",
+        "mustRejectDuplicateBeforeBuild"
+      ],
+      [
+        "metadata-orphan-2",
+        "mustPreflightAllMetadataBeforeBuild"
+      ]
+    ],
+    "driverErrors": []
+  },
+  "sourceRoot": "F:\\swe\\099928\\project-02",
+  "networkDeniedProxy": [
+    {
+      "method": "CONNECT",
+      "url": "example.com:443"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+C:\Users\czxy4\AppData\Roaming\Trae CN\logs\20261108T094108\window2\renderer.log:995
+2026-11-08T11:44:26.548+08:00 [info] [ai-chat/v2][Realtime] event: session_created {"chat_session_id":"6aeff01a4fbada6e450ec15e","user_id":"573311172224344","mode":"chat","status":1,"origin":"lite","created_at":1794109466539,"project_id":"6aefef3d4fbada6e450ec15d","real_project_id":"6aefef3d4fbada6e450ec15d"}
+C:\Users\czxy4\AppData\Roaming\Trae CN\logs\20261108T094108\window2\renderer.log:4073
+2026-11-08T12:18:11.296+08:00 [info] [ai-chat/v2][Realtime] event: session_updated {"chat_session_id":"6aeff01a4fbada6e450ec15e","user_id":"573311172224344","status":5,"updated_at":1794111491219}

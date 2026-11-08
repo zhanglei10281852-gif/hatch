@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
+***Added:***
+
+- Add the `--changed-since REF` option to the `build` command, which must be combined with `--all` and selects projects based on the differences between the given Git reference and the tracked files in the current working tree. Committed, staged, and unstaged changes are considered while untracked files are ignored, the merge base is not used, and every project must reside in the same Git working tree. Changed files are attributed to the deepest containing workspace member, projects that directly or transitively depend on the affected projects are also built using PEP 503 normalized package names (version constraints, environment markers, and enabled optional groups do not narrow the relationship), and any tracked change outside of every candidate project conservatively builds all candidates. When nothing changed the command succeeds without preparing build environments or touching existing artifacts
+
 ## [1.18.2](https://github.com/pypa/hatch/releases/tag/hatch-v1.18.2) - 2026-10-27 ## {: #hatch-v1.18.2 }
 
 ***Changed:***

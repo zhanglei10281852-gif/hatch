@@ -1,0 +1,16 @@
+{
+  "questionId": "pypa-hatch-4d2944d3-33d3-4f4b-be6c-536ed3afd32a",
+  "title": "按 Git 变更闭包筛选 workspace 构建",
+  "repoUrl": "https://github.com/pypa/hatch",
+  "version": "740565ac2929597cb9def8d46338cbef6493fc8d",
+  "researchDirectory": "F:\\swe\\099928\\project-02",
+  "batchDirectory": "F:\\swe\\099928",
+  "sessionId": "573311172224344:068a4d21dbb19441b34b0695983927cd_6aeff01a4fbada6e450ec15e.6aeff01a4fbada6e450ec161.6aeff01a4fbada6e450ec15f:TraeCode CN.3.3.104.no_sid.no_ppe.T(2026/11/8 11:44:26)",
+  "sourceFile": "trae-bridge:bridge_messages",
+  "localFile": "F:\\swe\\099928\\trajectories\\pypa-hatch-4d2944d3-33d3-4f4b-be6c-536ed3afd32a-33418fdc\\session-dc86bdf62a27e813.md",
+  "traceFormat": "trae-bridge:bridge_messages",
+  "memorySourceFile": "",
+  "memoryLocalFile": "",
+  "traceUpdatedAt": "2026-11-08T04:23:31.322Z",
+  "archivedAt": "2026-11-08T04:23:32.482Z"
+}

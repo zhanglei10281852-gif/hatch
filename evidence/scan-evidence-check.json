@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "syncRevision": 5,
+  "harness": "Trae",
+  "rounds": 65,
+  "source": "count-trae-cn-steps.py",
+  "sessionMatches": true,
+  "workspaceMatches": true,
+  "scope": "latest_turn",
+  "stepsMain": 65,
+  "subagentSteps": 0,
+  "toolBatches": 65,
+  "replies": 0,
+  "compactions": 0,
+  "effectiveRounds": 65,
+  "countScriptExecutedDuringReview": false,
+  "traceType": "bridge_messages",
+  "originalMetadataFile": "F:\\swe\\099928\\trajectories\\pypa-hatch-4d2944d3-33d3-4f4b-be6c-536ed3afd32a-33418fdc\\session-dc86bdf62a27e813.metadata.json"
+}

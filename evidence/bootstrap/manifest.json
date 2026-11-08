@@ -1,0 +1,5 @@
+{
+  "path": "_version.py",
+  "purpose": "Exact generated and ignored Hatch version module used during validation; copy to src/hatch/_version.py after a fresh checkout",
+  "sha256": "ce0be13a240dbab9cc5259c887a2b49f5c4ae582a87b254e80be6beb9c1bd2de"
+}

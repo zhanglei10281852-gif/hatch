@@ -1,0 +1,84 @@
+{
+  "id": "pypa-hatch-4d2944d3-33d3-4f4b-be6c-536ed3afd32a",
+  "title": "按 Git 变更闭包筛选 workspace 构建",
+  "repoUrl": "https://github.com/pypa/hatch",
+  "artifactRepo": "https://github.com/zhanglei10281852-gif/hatch",
+  "version": "740565ac2929597cb9def8d46338cbef6493fc8d",
+  "prompt": "修改 monorepo 中的共享库后，维护者希望构建该库及受它影响的本地包，并跳过没有关联的包。请给 hatch build --all 增加 --changed-since REF，以 REF 指向的 Git 提交与当前工作树中已跟踪文件的差异选择构建项目，包含提交后的变更、暂存及未暂存修改，不把未跟踪文件当作变化，也不自动改用合并基点。候选范围沿用所选环境的 workspace.members 和 exclude，有 project 表的根项目也作为候选且最多出现一次，只有 workspace 配置的根目录不生成自身制品；该模式仅适用于所有成员都位于同一个 Git 工作树的情况，并要求与 --all 一起使用。变化文件归属于包含它的最深层成员目录，目录名相似或路径含空格不能造成误判；删除文件仍影响原所属成员，跨成员重命名要考虑旧、新两条路径。若有已跟踪文件变化不属于任何成员目录，则保守选择全部候选项目。对成员内的变化，还须加入直接或间接依赖受影响项目的其他候选项目：依据各项目当前解析出的运行时依赖和全部可选依赖，按 PEP 503 规范化后的包名建立关系，版本约束、环境标记及可选组是否启用均不缩减这个保守影响范围，不查询包索引求解依赖，动态依赖通过现有元数据解析流程取得；依赖环应结束计算，每个入选项目只构建一次。成员和依赖关系必须足以确定完整集合后才能开始生成制品；REF 无效、成员不在同一工作树、规范化包名有歧义或依赖元数据解析失败时，给出可定位的错误并且不开始任何项目的制品构建或清理，修复输入后再次执行应按新输入重新计算。没有已跟踪文件变化时成功退出，说明无需构建，不准备构建环境，也不改动已有制品。入选项目沿用 --all 的构建顺序、目标选择和统一输出位置，未传 --changed-since 时，单项目 build 与全量 build --all 的既有行为保持不变。",
+  "rubric": [
+    {
+      "id": 1,
+      "type": "f2p",
+      "text": "新选项要求与 --all 同用，基于所给提交至当前跟踪工作树的差异选择所选环境的候选范围，包含已提交、暂存和未暂存变化且忽略未跟踪文件；根项目去重，配置容器根不生成自身制品。"
+    },
+    {
+      "id": 2,
+      "type": "f2p",
+      "text": "成员内变化按最深目录归属，目录前缀相似及含空格的路径不会串选；删除文件保留原成员影响，跨成员重命名的旧、新所属成员均进入变化种子。"
+    },
+    {
+      "id": 3,
+      "type": "f2p",
+      "text": "按规范化包名从当前运行时和全部可选依赖求出变化种子的完整传递消费者集合，动态元数据参与计算，不因版本、标记或可选组状态漏选；未相连项目排除，依赖环终止且每个项目至多构建一次。"
+    },
+    {
+      "id": 4,
+      "type": "f2p",
+      "text": "已跟踪的共享文件变化无法归属于任何成员目录时选择全部候选项目，仍遵循当前环境的成员排除及根项目是否可构建的范围。"
+    },
+    {
+      "id": 5,
+      "type": "f2p",
+      "text": "没有已跟踪文件变化时成功提示无需构建，不准备任何项目的构建环境，不生成、删除或覆盖已有制品。"
+    },
+    {
+      "id": 6,
+      "type": "f2p",
+      "text": "无效 REF、跨工作树成员、规范化名称歧义或依赖元数据解析失败均有可定位错误，完整影响集合成立前不开始制品构建或清理；修复输入再执行时重新计算并构建正确集合。"
+    },
+    {
+      "id": 7,
+      "type": "p2p",
+      "text": "入选项目保持原 --all 顺序、目标选择和统一输出位置；省略新选项的单项目与 --all 构建继续保留原有根项目处理、目标制品及输出目录行为。"
+    }
+  ],
+  "harness": "Trae",
+  "rounds": 65,
+  "sessionId": "573311172224344:068a4d21dbb19441b34b0695983927cd_6aeff01a4fbada6e450ec15e.6aeff01a4fbada6e450ec161.6aeff01a4fbada6e450ec15f:TraeCode CN.3.3.104.no_sid.no_ppe.T(2026/11/8 11:44:26)",
+  "effectiveRoundsEvidence": {
+    "source": "count-trae-cn-steps.py",
+    "effectiveRounds": 65,
+    "sessionId": "573311172224344:068a4d21dbb19441b34b0695983927cd_6aeff01a4fbada6e450ec15e.6aeff01a4fbada6e450ec161.6aeff01a4fbada6e450ec15f:TraeCode CN.3.3.104.no_sid.no_ppe.T(2026/11/8 11:44:26)",
+    "workspace": "F:\\swe\\099928\\project-02",
+    "script": "F:\\swe\\count-trae-cn-steps.py",
+    "scope": "latest_turn",
+    "assistantMessages": 1,
+    "stepsMain": 65,
+    "subagentSteps": 0,
+    "toolBatches": 65,
+    "replies": 0,
+    "compactions": 0,
+    "toolCalls": 99,
+    "uniqueTools": 9,
+    "parallelBatches": 28,
+    "parallelItemsCollapsed": 34,
+    "toolBreakdown": {
+      "GetDiagnostics": 1,
+      "Shell": 25,
+      "Write": 2,
+      "edit_file_search_replace": 12,
+      "finish": 1,
+      "search_by_regex": 23,
+      "todo_write": 5,
+      "view_files": 29,
+      "view_folder": 1
+    },
+    "agentBreakdown": {
+      "SOLO": 65
+    },
+    "countingBasis": "agentRunId + reasoningContent response boundaries; consecutive tools stay in one model response",
+    "warnings": []
+  },
+  "researchDirectory": "F:\\swe\\099928\\project-02",
+  "syncRevision": 5
+}

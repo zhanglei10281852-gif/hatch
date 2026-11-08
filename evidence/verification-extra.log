@@ -1,0 +1,5 @@
+selected-environment exit 0 builds ['b']
+direct-diverged-ref exit 0 builds ['a', 'b']
+dynamic-optional exit 0 builds ['client', 'dynamic']
+explicit-selected-output exit 0 builds ['a', 'a']
+{'cases': 4, 'checks': 15, 'failed': []}

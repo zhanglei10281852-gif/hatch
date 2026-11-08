@@ -1,0 +1,14 @@
+{
+  "method": "Windows PowerShell System.Drawing.CopyFromScreen from GetClientRect/ClientToScreen of dedicated report terminal",
+  "clientWidth": 2400,
+  "clientHeight": 760,
+  "file": "screenshots/01-rubric-comparison.png",
+  "sha256": "47092c8b19a3e7c8b71438d4912f95a9f4fffb4b1d6b6611b9390f26c6b2433d",
+  "visuallyOpened": true,
+  "allSevenRubricsVisible": true,
+  "failureReasonImpactAndRawEvidenceVisible": true,
+  "onlyCurrentProject": true,
+  "unrelatedWindowsOrBorders": false,
+  "firstCaptureRejected": "excess empty lower area; deleted and recaptured with 38-row terminal",
+  "retainedImages": 1
+}
